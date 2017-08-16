@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TechLaunch Coding Assessment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <style>
+    .card .card-content p{
+      margin: 0.7rem auto;
+    }
+    code{
+      margin: 0.5rem auto;
+    }
+    #submit{
+      display: block;
+      margin: 0 auto;
+      width: 15rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m10 offset-m1">
+        <section class="card">
+          <div class="card-content">
+            <h1>Question 1</h1>
+            <p>The first and most basic concept you will learn in programming is that of variables. A variable is just a name that can hold a value. Just like in math you had statements like y = 5 and so on, in programming you can create variables with values. If you wanted to create a variable named y with the value 5, you could do so by writing the following statement: </p>
+            <p>
+              <br><br>
+              <code class="grey lighten-3">var y = 5;</code>
+              <br><br>
+            </p>
+            <p>You need the "var" keyword before the name of the variable in order to tell the programming language that you are creating a new variable.</p>
+            <p>In programming, you can do arithmetic. It is built in. The arithmetic operators used in programming are: </p>
+            <ul>
+              <li>* which is used for multiplication  </li>
+              <li>/ which is used for division </li>
+              <li>+ and – which are used for addition and subtraction </li>
+
+            </ul>
+            <p>Thus, if you have a statement like 5*5 in programming, this statement will evaluate to the number 25 (because * stands for multiplication and 25 is the result of multiplying 5 times 5).</p>
+            <p>Let's see an example:</p>
+            <br><br>
+            <code class="grey lighten-3">
+              var a = 5; <br>
+              var b = 10; <br>
+              var c = a + b;<br>
+            </code>
+            <br><br>
+            <p>After the code above runs, the resulting value of the variable named c is 15. This is so because c is equal to a + b but a is 5 and b is 10. </p>
+            <p><strong><br><br>
+              Problem: <br>
+                Given the following statements: <br>
+                <code class="grey lighten-3">
+                  var x = 15; <br>
+                  var kim = 10*x; <br>
+                  var hello = kim + x*x; <br>
+                </code>
+
+                What is the value of the variable kim?
+
+            </strong></p>
+            <div class="row">
+              <div class="input-field col s10">
+                <i class="material-icons prefix">new_releases</i>
+                <input id="q1" type="text" class="validate">
+                <label for="q1">Your Answer Here</label>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <br><br>
+        <section class="card">
+          <div class="card-content">
+            <h1>Question 2</h1>
+            <p>When variables are defined, they get their value right away. So if you have something like this: </p>
+            <code class="grey lighten-3">
+              var a = 5; <br>
+              var b = 2*a; <br>
+              a = 10;<br>
+            </code>
+            <p>The last statement in this code changes the value of a to 10, but <strong>since b already got its value, it does not get changed</strong> (it continues to be 10, the result of 2 * 5 since a was 5 at that point).</p>
+            <p><strong>
+              <br><br>
+              Problem: <br>
+              <code class="grey lighten-3">
+                var x = 10; <br>
+                var y = 5 + x; <br>
+                hello = x*x + y; <br>
+                x = 5; <br>
+              </code>
+              What is the value of the variable hello after the following code runs?
+
+            </strong></p>
+            <div class="row">
+              <div class="input-field col s10">
+                <i class="material-icons prefix">new_releases</i>
+                <input id="q2" type="text" class="validate">
+                <label for="q2">Your Answer Here</label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br><br>
+        <section class="card">
+          <div class="card-content">
+            <h1>Question 3</h1>
+            <p>Variables don't always need to have numeric values. There is a data type in programming known as the "string" type, and it is used to store sequences of characters. Consider the following statement: </p>
+            <code class="grey lighten-3">
+              var a = "hello world";
+            </code>
+            <p>In this statement, a variable named a is being created and its value is the sequence of characters (letters, numbers, and symbols) "hello world". Note, in this context even the empty space between the words "hello" and "world" counts as a character.  </p>
+            <p>You can add strings together by using the plus sign, just like adding numbers. Adding strings will basically join them together. Consider the following example:</p>
+            <code class="grey lighten-3">
+              var a = "hello world"; <br>
+              var b = "she would like to call a lifeline"; <br>
+              var c = a+b; <br>
+            </code>
+            <p>Then the value of c is the string <em>"hello worldshe would like to call a lifeline"</em>. Notice that the plus sign simply joins the strings together, it doesn't add any extra space in between them. With that in mind, consider the following code:</p>
+            <p><strong><br><br>
+              Problem:   <br>
+              <code class="grey lighten-3">
+                var x = "dun";<br>
+                var y = x+x+x; <br>
+              </code>
+
+              What is the value of y?
+            </strong></p>
+            <div class="row">
+              <div class="input-field col s10">
+                <i class="material-icons prefix">new_releases</i>
+                <input id="q3" type="text" class="validate">
+                <label for="q3">Your Answer Here</label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br><br>
+        <section class="card">
+          <div class="card-content">
+            <h1>Question 4</h1>
+            <p>A big part of programming is getting the computer to make decisions. For this, we have if statements. An if statement will have the following structure:</p>
+            <code class="grey lighten-3">
+              if (condition){ <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;...some code here <br>
+              } <br>
+            </code>
+            <p><em>Condition</em> is an expression like for example x < 10. The value of <em>condition</em> is either true or false. Whenever it is true, then the code inside the curly braces will run. If <em>condition</em> is not true, then the code inside the braces will not run. Examples: </p>
+            <code class="grey lighten-3">
+              var x  = 10; <br>
+              if (x < 12){ <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;var x = 50; <br>
+              } <br>
+            </code>
+            <p>After this code runs, the value of var x is 50. </p>
+            <code class="grey lighten-3">
+              var x  = 10;<br>
+              if (x < 5){ <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;var x = 50; <br>
+            } <br>
+            </code>
+            <p>After this code runs, the value of var x does not get changed because the condition wasn't true (x was 10 and 10 is not less than 5).</p>
+            <p><strong> <br><br>
+              Problem: <br>
+              <code class="grey lighten-3">
+                var x = 10; <br>
+                var y = 10; <br>
+                if (x * y < 100){ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;var x = 20; <br>
+                } <br>
+                var z = x * y; <br>
+              </code>
+              What is the value of variable z?
+            </strong></p>
+            <div class="row">
+              <div class="input-field col s10">
+                <i class="material-icons prefix">new_releases</i>
+                <input id="q4" type="text" class="validate">
+                <label for="q4">Your Answer Here</label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <br><br>
+        <section class="card">
+          <div class="card-content">
+            <h1>Question 5</h1>
+            <p>String variables, the kind discussed in problem 3, have some extra functionality. One of the properties of strings is the length property. Example:</p>
+            <code class="grey lighten-3">
+              var a = "hello ms. Daisy"; <br>
+              var b = a.length;
+            </code>
+            <p>Because var a is a string, then you can use a.length to get its length. The length of the string is the number of characters it has. In this case, the value of var b is 15, because that's how many characters are in the string a.</p>
+            <p><strong>
+              Problem: <br>
+              <code class="grey lighten-3">
+                var name =  "adolfo guzman"; <br>
+                var x = "yes"; <br>
+                if (name.length <  15){ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;x = "no"; <br>
+                } <br>
+              </code>
+              <br>
+              What is the value of var x?
+            </strong></p>
+            <div class="row">
+              <div class="input-field col s10">
+                <i class="material-icons prefix">new_releases</i>
+                <input id="q5" type="text" class="validate">
+                <label for="q5">Your Answer Here</label>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <br><br>
+        <div class="row">
+          <div class="input-field col s8 offset-s2">
+            <i class="material-icons prefix">new_releases</i>
+            <input id="name" type="text" class="validate">
+            <label for="name">Your Name:</label>
+          </div>
+        </div>
+        <a id="submit" class="waves-effect waves-light btn z-depth-4">
+          <i class="material-icons right">done</i>Submit Test
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script>
+    $("#submit").on('click', submitForm);
+    function submitForm(){
+      var name= $("#name").val();
+      var q1= $("#q1").val();
+      var q2= $("#q2").val();
+      var q3= $("#q3").val();
+      var q4= $("#q4").val();
+      var q5= $("#q5").val();
+      if (!name || (Boolean(q1) + Boolean(q2) + Boolean(q3) + Boolean(q4) + Boolean(q5)) < 5){
+        alert("You need to fill in your name and at least three questions");
+        return false;
+      }
+      $("#submit").text("submitting.....")
+      $("#submit").off('click', submitForm);
+      var url = window.location.origin + '/api/assessment';
+      $.ajax({
+        url: url,
+        headers:{
+          "Content-Type": "application/json"
+        },
+        success: function(res){
+          $("#submit").text("Answer Submitted.")
+          console.log(res);
+          setTimeout(function(){
+            window.location.reload();
+          },1500);
+        },
+        error: function(err){
+          $("#submit").text("Submit!");
+          $("#submit").on('click', submitForm);
+          alert(err);
+        },
+        method: 'POST',
+        data: JSON.stringify({
+          name: $("#name").val(),
+          q1: $("#q1").val(),
+          q2: $("#q2").val(),
+          q3: $("#q3").val(),
+          q4: $("#q4").val(),
+          q5: $("#q5").val()
+        }),
+        dataType: 'json'
+      });
+    }
+  </script>
+</body>
+</html>
